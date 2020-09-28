@@ -39,3 +39,9 @@ make deploy
 
 ## Install NGINX
 - To expose applications outside of the cluster you'll be using the NGINX ingress controller. The controller will run inside the Linkerd mesh.
+```sh
+git add -A && \
+git commit -m "install ingress" && \
+git push origin master && \
+fluxctl sync
+```
